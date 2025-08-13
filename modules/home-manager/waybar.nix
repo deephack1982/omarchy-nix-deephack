@@ -17,7 +17,7 @@ in {
       text = ''
         @define-color background ${backgroundRgb};
         * {
-          color: ${foregroundRgb}; 
+          color: ${foregroundRgb};
         }
 
         window#waybar {
@@ -37,6 +37,7 @@ in {
         height = 26;
         modules-left = [
           "hyprland/workspaces"
+          "hyperland/window"
         ];
         modules-center = [
           "clock"
