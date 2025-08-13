@@ -1,4 +1,4 @@
-{pkgs, lib, exclude_packages ? []}: 
+{pkgs, lib, exclude_packages ? []}:
 let
   # Essential Hyprland packages - cannot be excluded
   hyprlandPackages = with pkgs; [
@@ -42,23 +42,11 @@ let
     fastfetch
 
     # GUIs
-    chromium
-    obsidian
     vlc
     signal-desktop
 
     # Commercial GUIs
     typora
-    dropbox
-    spotify
-
-    # Development tools
-    github-desktop
-    gh
-
-    # Containers
-    docker-compose
-    ffmpeg
   ];
 
   # Only allow excluding discretionary packages to prevent breaking the system

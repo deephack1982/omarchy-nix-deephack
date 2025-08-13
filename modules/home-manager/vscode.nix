@@ -8,10 +8,10 @@
   theme = themes.${cfg.theme};
 in {
   programs.vscode = {
-    enable = true;
+    enable = false;
     profiles.default = {
 
-      # This is actually turning out to be super annoying whenever I need 
+      # This is actually turning out to be super annoying whenever I need
       # to change settings on the fly. Disabling until I have time to research.
       # In the meantime themes are broken
       # userSettings =
@@ -20,7 +20,7 @@ in {
         #   "vim.useCtrlKeys" = false;
         #   "editor.minimap.enabled" = false;
         # }
-        
+
         # // cfg.vscode_settings;
 
       extensions = with pkgs.vscode-extensions;

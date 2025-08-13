@@ -18,9 +18,9 @@ in {
     # Default applications
     "$terminal" = lib.mkDefault "ghostty";
     "$fileManager" = lib.mkDefault "nautilus --new-window";
-    "$browser" = lib.mkDefault "chromium --new-window --ozone-platform=wayland";
+    "$browser" = lib.mkDefault "firefox";
     "$music" = lib.mkDefault "spotify";
-    "$passwordManager" = lib.mkDefault "1password";
+    "$passwordManager" = lib.mkDefault "keepassxc";
     "$messenger" = lib.mkDefault "signal-desktop";
     "$webapp" = lib.mkDefault "$browser --app";
 
