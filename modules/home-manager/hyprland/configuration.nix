@@ -22,7 +22,7 @@ in {
     "$music" = lib.mkDefault "spotify";
     "$passwordManager" = lib.mkDefault "keepassxc";
     "$messenger" = lib.mkDefault "signal-desktop";
-    "$webapp" = lib.mkDefault "$browser --app";
+    "$webapp" = lib.mkDefault "$browser -P Webapp ";
 
     monitor = cfg.monitors;
   };

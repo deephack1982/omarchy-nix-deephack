@@ -37,7 +37,7 @@ in {
         height = 26;
         modules-left = [
           "hyprland/workspaces"
-          "hyperland/window"
+          "hyprland/window"
         ];
         modules-center = [
           "clock"
