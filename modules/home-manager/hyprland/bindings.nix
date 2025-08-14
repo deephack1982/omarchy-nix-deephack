@@ -112,8 +112,8 @@ in {
       ",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && pamixer --get-volume > /tmp/wobpipe"
       ",XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && ( pamixer --get-mute && echo 0 > /tmp/wobpipe || pamixer --get-volume > /tmp/wobpipe )"
       ",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
-      ",XF86MonBrightnessUp, exec, brightnessctl -e4 -n2 set 5%+ && brightnessctl get > /tmp/wobpipe"
-      ",XF86MonBrightnessDown, exec, brightnessctl -e4 -n2 set 5%- && brightnessctl get > /tmp/wobpipe"
+      ",XF86MonBrightnessUp, exec, brightnessctl -e4 -n2 set 5%+ && brightnessctl g | awk -v max=$(brightnessctl m) '{print int($1 / max * 100)}'"
+      ",XF86MonBrightnessDown, exec, brightnessctl -e4 -n2 set 5%- && brightnessctl g | awk -v max=$(brightnessctl m) '{print int($1 / max * 100)}'"
     ];
 
     bindl = [
