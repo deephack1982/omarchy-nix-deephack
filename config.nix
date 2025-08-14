@@ -66,7 +66,7 @@ lib: {
         "SUPER, F, exec, $fileManager"
         "SUPER, B, exec, $browser"
         "SUPER, M, exec, $webapp=https://music.youtube.com"
-        "SUPER, N, exec, zed"
+        "SUPER, N, exec, zeditor"
         "SUPER, T, exec, $terminal -e btop"
         "SUPER, G, exec, $messenger"
         "SUPER, slash, exec, $passwordManager"
