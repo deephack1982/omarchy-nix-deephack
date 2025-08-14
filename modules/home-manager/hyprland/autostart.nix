@@ -11,6 +11,7 @@
       "hyprsunset"
       "systemctl --user start hyprpolkitagent"
       "wl-clip-persist --clipboard regular & clipse -listen"
+      "mkfifo /tmp/wobpipe && tail -f /tmp/wobpipe | wob &"
 
       # "dropbox-cli start"  # Uncomment to run Dropbox
     ];

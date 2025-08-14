@@ -47,7 +47,7 @@ in {
         "SUPER, 8, workspace, 8"
         "SUPER, 9, workspace, 9"
         "SUPER, 0, workspace, 10"
-        
+
         "SUPER, comma, workspace, -1"
         "SUPER, period, workspace, +1"
 
@@ -108,12 +108,12 @@ in {
 
     bindel = [
       # Laptop multimedia keys for volume and LCD brightness
-      ",XF86AudioRaiseVolume, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"
-      ",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
-      ",XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+      ",XF86AudioRaiseVolume, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+ && pamixer --get-volume > /tmp/wobpipe"
+      ",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && pamixer --get-volume > /tmp/wobpipe"
+      ",XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && ( pamixer --get-mute && echo 0 > /tmp/wobpipe || pamixer --get-volume > /tmp/wobpipe )"
       ",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
-      ",XF86MonBrightnessUp, exec, brightnessctl -e4 -n2 set 5%+"
-      ",XF86MonBrightnessDown, exec, brightnessctl -e4 -n2 set 5%-"
+      ",XF86MonBrightnessUp, exec, brightnessctl -e4 -n2 set 5%+ && brightnessctl get > /tmp/wobpipe"
+      ",XF86MonBrightnessDown, exec, brightnessctl -e4 -n2 set 5%- && brightnessctl get > /tmp/wobpipe"
     ];
 
     bindl = [
