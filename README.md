@@ -1,5 +1,13 @@
 # Omarchy Nix
 
+## Modified version by me (Deephack)
+
+Original comes from Henry Sipp, check out his repo at henrysipp/omarchy-nix
+
+My changes are all just to fit my preferences so not intended really to be used by anyone else. Original README text is below.
+
+--
+
 Omarchy-nix (Omanix?) is an opinionated NixOS flake to help you get started as fast as possible with NixOS and Hyprland. It is primarily a reimplementation of [DHH's Omarchy](https://github.com/basecamp/omarchy) project - an opinionated Arch/Hyprland setup for modern web development.
 
 This was mostly spun up in a weekend so if you have any issues please let me know, my goal is to eventually make this as seamless an install experience as Omarchy itself!
@@ -39,7 +47,7 @@ Once ready, add this flake to your system configuration, you'll also need [home-
             email_address = "your.email@example.com";
             theme = "tokyo-night";
           };
-          
+
           home-manager = {
             users.your-username = {
               imports = [ omarchy-nix.homeManagerModules.default ]; # And this one
@@ -101,7 +109,7 @@ Any theme can be customized with a custom wallpaper by specifying `wallpaper_pat
 }
 ```
 
-Generated themes automatically extract colors from the wallpaper and create a matching color scheme for all Omarchy applications (terminal, editor, launcher, etc.). 
+Generated themes automatically extract colors from the wallpaper and create a matching color scheme for all Omarchy applications (terminal, editor, launcher, etc.).
 
 ## License
 
