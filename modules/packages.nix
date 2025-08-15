@@ -44,9 +44,6 @@ let
     # GUIs
     vlc
     signal-desktop
-
-    # Commercial GUIs
-    typora
   ];
 
   # Only allow excluding discretionary packages to prevent breaking the system
