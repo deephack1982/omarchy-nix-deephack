@@ -35,6 +35,7 @@ in {
     (import ./waybar.nix inputs)
     (import ./wofi.nix)
     (import ./zoxide.nix)
+    (import ./pyprland.nix)
   ];
 
   home.file = {

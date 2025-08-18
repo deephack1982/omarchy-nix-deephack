@@ -46,6 +46,12 @@ in {
       };
     };
 
+    group = {
+      groupbar = {
+        font_size = 10;
+      };
+    };
+
     animations = {
       enabled = true; # yes, please :)
 
