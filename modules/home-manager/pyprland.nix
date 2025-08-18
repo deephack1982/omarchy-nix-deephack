@@ -4,7 +4,7 @@
   ...
 }: {
   home.file = {
-    ".config/hyprland/pyprland.toml" = {
+    ".config/hypr/pyprland.toml" = {
       text = ''
         [pyprland]
         plugins = [ "scratchpads" ]
