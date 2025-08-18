@@ -48,7 +48,7 @@ in {
 
     group = {
       groupbar = {
-        font_size = 10;
+        enabled = false;
       };
     };
 
