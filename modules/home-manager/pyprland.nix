@@ -10,8 +10,8 @@
         plugins = [ "scratchpads" ]
 
         [scratchpads.term]
-        command = "ghostty --class=scratchpadterm"
-        class = "scratchpadterm"
+        command = "ghostty --title=scratchpad"
+        class = "scratchpad"
         size = "80% 40%"
         animation = "fromTop"
       '';
