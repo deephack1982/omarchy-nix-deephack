@@ -32,12 +32,13 @@
         options.omarchy = (import ./config.nix lib).omarchyOptions;
         config = {
           nixpkgs.config.allowUnfree = true;
+
+          nixpkgs.overlays = [
+            (final: prev: {
+              pyprland = pyprland.packages.${final.system}.default;
+            })
+          ];
         };
-        nixpkgs.overlays = [
-          (final: prev: {
-            pyprland = pyprland.packages.${final.system}.default;
-          })
-        ];
       };
     };
 
