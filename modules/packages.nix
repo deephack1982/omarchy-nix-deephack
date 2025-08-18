@@ -10,6 +10,7 @@ let
     playerctl
     gnome-themes-extra
     pavucontrol
+    pyprland
   ];
 
   # Essential system packages - cannot be excluded

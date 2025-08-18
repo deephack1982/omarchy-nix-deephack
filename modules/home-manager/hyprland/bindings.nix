@@ -86,6 +86,9 @@ in {
         # Grouped windows binds
         "SUPER, Tab, changegroupactive, f"
 
+        # Scratchpad binds
+        "SUPER, `, exec, pypr toggle term"
+
         # Screenshots
         ", PRINT, exec, hyprshot -m region"
         "SHIFT, PRINT, exec, hyprshot -m window"
