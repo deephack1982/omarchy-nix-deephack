@@ -79,14 +79,12 @@ in {
         "SUPER, mouse_down, workspace, e+1"
         "SUPER, mouse_up, workspace, e-1"
 
-        # Control Apple Display brightness
-        "CTRL, F1, exec, ~/.local/share/omarchy/bin/apple-display-brightness -5000"
-        "CTRL, F2, exec, ~/.local/share/omarchy/bin/apple-display-brightness +5000"
-        "SHIFT CTRL, F2, exec, ~/.local/share/omarchy/bin/apple-display-brightness +60000"
-
         # Super workspace floating layer
         "SUPER, S, togglespecialworkspace, magic"
         "SUPER SHIFT, S, movetoworkspace, special:magic"
+
+        # Grouped windows binds
+        "SUPER, Tab, changegroupactive, f"
 
         # Screenshots
         ", PRINT, exec, hyprshot -m region"

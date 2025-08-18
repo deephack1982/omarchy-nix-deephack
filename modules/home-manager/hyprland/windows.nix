@@ -28,6 +28,9 @@
       "opacity 1 1, class:^(zoom|vlc|org.kde.kdenlive|com.obsproject.Studio)$"
       "opacity 1 1, class:^(com.libretro.RetroArch|steam)$"
 
+      # Zed editor rules
+      "group, class:^zed)$"
+
       # Fix some dragging issues with XWayland
       "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
 
