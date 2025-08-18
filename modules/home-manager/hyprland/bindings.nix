@@ -87,7 +87,7 @@ in {
         "SUPER, Tab, changegroupactive, f"
 
         # Scratchpad binds
-        "SUPER, `, exec, pypr toggle term"
+        "SUPER, grave, exec, pypr toggle term"
 
         # Screenshots
         ", PRINT, exec, hyprshot -m region"
