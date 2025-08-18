@@ -10,8 +10,8 @@
         plugins = [ "scratchpads" ]
 
         [scratchpads.term]
-        command = "ghostty"
-        class = "com.mitchellh.ghostty"
+        command = "ghostty --class=scratchpadterm"
+        class = "scratchpadterm"
         size = "80% 40%"
         multi = false
       '';
