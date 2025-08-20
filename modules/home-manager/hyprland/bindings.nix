@@ -98,7 +98,7 @@ in {
         "SUPER, PRINT, exec, hyprpicker -a"
 
         # Clipse
-        "CTRL SUPER, V, exec, ghostty --class clipse -e clipse"
+        "CTRL SUPER, V, exec, ghostty --class=com.markd.clipse -e clipse"
       ];
 
     bindm = [

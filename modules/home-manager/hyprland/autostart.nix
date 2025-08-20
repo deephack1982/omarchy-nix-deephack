@@ -5,17 +5,13 @@
 }: {
   wayland.windowManager.hyprland.settings = {
     exec-once = [
-      # "hypridle & mako & waybar & fcitx5"
-      # "waybar"
-      # "swaybg -i ~/.config/omarchy/current/background -m fill"
       "hyprsunset"
       "systemctl --user start hyprpolkitagent"
       "wl-clip-persist --clipboard regular & clipse -listen"
       "mkfifo -m 600 /tmp/wobpipe"
       "tail -f /tmp/wobpipe | wob"
       "pypr --debug /tmp/pypr.log"
-
-      # "dropbox-cli start"  # Uncomment to run Dropbox
+      "keepassxc --minimized"
     ];
 
     exec = [
