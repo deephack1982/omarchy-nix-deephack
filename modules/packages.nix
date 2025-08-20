@@ -11,6 +11,7 @@ let
     gnome-themes-extra
     pavucontrol
     pyprland
+    wl-clip-persist
   ];
 
   # Essential system packages - cannot be excluded
