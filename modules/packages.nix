@@ -11,6 +11,7 @@ let
     gnome-themes-extra
     pavucontrol
     pyprland
+    wl-clipboard
     wl-clip-persist
   ];
 
