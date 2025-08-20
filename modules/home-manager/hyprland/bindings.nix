@@ -89,6 +89,9 @@ in {
         # Scratchpad binds
         "SUPER, grave, exec, pypr toggle term"
 
+        # More profiles
+        "SUPER SHIFT, B, exec, $browser -P Ittybit"
+
         # Screenshots
         ", PRINT, exec, hyprshot -m region"
         "SHIFT, PRINT, exec, hyprshot -m window"
