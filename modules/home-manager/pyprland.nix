@@ -11,7 +11,7 @@
 
         [scratchpads.term]
         command = "ghostty --title=scratchpad"
-        class = "scratchpad"
+        class = "com.mitchellh.ghostty"
         size = "80% 40%"
         animation = "fromTop"
       '';
