@@ -13,6 +13,8 @@ let
     pyprland
     wl-clipboard
     wl-clip-persist
+    wf-recorder
+    ffmpeg
   ];
 
   # Essential system packages - cannot be excluded
