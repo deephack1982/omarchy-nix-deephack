@@ -42,6 +42,7 @@ in {
           "clock"
         ];
         modules-right = [
+          "custom/wf-recorder"
           "tray"
           "bluetooth"
           "network"
@@ -76,6 +77,12 @@ in {
             "5" = [];
           };
         };
+        "custom/wf-recorder" = {
+          exec: "~/.local/share/omarchy/bin/wf-recorder-status.sh";
+          interval = 2;
+          return-type = "json";
+          format = "{}";
+        }
         cpu = {
           interval = 5;
           format = "󰍛";
