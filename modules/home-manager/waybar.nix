@@ -97,7 +97,7 @@ in {
           tooltip-format-disconnected = "Disconnected";
           interval = 3;
           nospacing = 1;
-          on-click = "ghostty -e nmtui --class=com.markd.nmtui";
+          on-click = "ghostty --class=com.markd.nmtui -e nmtui";
         };
         battery = {
           interval = 5;
