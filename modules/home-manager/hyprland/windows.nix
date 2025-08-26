@@ -10,7 +10,7 @@
       "tile, class:^(chromium)$"
 
       # Settings management
-      "float, class:^(org.pulseaudio.pavucontrol|blueberry.py|com.markd.nmcli)$"
+      "float, class:^(org.pulseaudio.pavucontrol|blueberry.py)$"
 
       # Float Steam, fullscreen RetroArch
       "float, class:^(steam)$"
@@ -33,9 +33,9 @@
       "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
 
       # Float in the middle for clipse clipboard manager
-      "float, class:(com.markd.clipse)"
-      "size 622 652, class:(com.markd.clipse)"
-      "stayfocused, class:(com.markd.clipse)"
+      "float, class:(com.markd.clipse|com.markd.nmcli)"
+      "size 622 652, class:(com.markd.clipse|com.markd.nmcli)"
+      "stayfocused, class:(com.markd.clipse|com.markd.nmcli)"
     ];
 
     layerrule = [
