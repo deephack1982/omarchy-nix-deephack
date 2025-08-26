@@ -32,6 +32,17 @@ in {
     };
   };
 
+  services.xserver.displayManager.session = [
+      {
+        manage = "desktop";
+        name = "hyprland";
+        start = ''
+          ${lib.getExe pkgs.hyprland} &
+          waitPID=$!
+        '';
+      }
+    ];
+
   # Install packages
   environment.systemPackages = packages.systemPackages;
   programs.direnv.enable = true;
