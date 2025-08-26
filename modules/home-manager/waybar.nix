@@ -78,11 +78,11 @@ in {
           };
         };
         "custom/wf-recorder" = {
-          exec: "~/.local/share/omarchy/bin/wf-recorder-status.sh";
+          exec = "~/.local/share/omarchy/bin/wf-recorder-status.sh";
           interval = 2;
           return-type = "json";
           format = "{}";
-        }
+        };
         cpu = {
           interval = 5;
           format = "󰍛";
