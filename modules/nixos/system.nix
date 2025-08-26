@@ -19,11 +19,12 @@ in {
   # Initial login experience
   services.greetd = {
     enable = true;
-    settings.default_session.command = "${pkgs.cage}/bin/cage -s -- ${pkgs.greetd.gtkgreet}/bin/gtkgreet -l -c Hyprland";
+    #settings.default_session.command = "${pkgs.cage}/bin/cage -s -- ${pkgs.greetd.gtkgreet}/bin/gtkgreet -l -c Hyprland";
     #settings.default_session.command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Hyprland";
   };
-  services.greetd.environment = {
-    GTK_THEME = "Adwaita:dark";
+
+  programs.regreet = {
+    enable = true;
   };
 
   # Install packages
