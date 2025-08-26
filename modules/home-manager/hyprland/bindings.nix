@@ -97,7 +97,7 @@ in {
         "CTRL, PRINT, exec, hyprshot -m output"
 
         # Screen capture
-        "SHIFT SUPER, PRINT, exec wf-recorder -a -c h264_vaapi -d /dev/dri/renderD128 -f ~/$(date +%Y-%m-%d-%H:%M:%S).mp4"
+        "SHIFT SUPER, PRINT, exec wf-recorder -a -c h264_vaapi -d /dev/dri/renderD128 -f ~/"$(date +%Y-%m-%d-%H:%M:%S)".mp4"
 
         # Color picker
         "SUPER, PRINT, exec, hyprpicker -a"
