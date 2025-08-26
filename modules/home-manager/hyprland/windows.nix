@@ -1,6 +1,4 @@
 {
-  config,
-  pkgs,
   ...
 }: {
   wayland.windowManager.hyprland.settings = {
@@ -12,7 +10,7 @@
       "tile, class:^(chromium)$"
 
       # Settings management
-      "float, class:^(org.pulseaudio.pavucontrol|blueberry.py)$"
+      "float, class:^(org.pulseaudio.pavucontrol|blueberry.py|com.markd.nmcli)$"
 
       # Float Steam, fullscreen RetroArch
       "float, class:^(steam)$"

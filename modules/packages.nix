@@ -58,6 +58,6 @@ in {
   # Regular packages
   systemPackages = allSystemPackages;
 
-  homePackages = with pkgs; [
-  ];
+  #homePackages = with pkgs; [
+  #];
 }

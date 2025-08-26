@@ -1,6 +1,5 @@
 inputs: {
   config,
-  pkgs,
   ...
 }: let
   palette = config.colorScheme.palette;
@@ -43,7 +42,6 @@ in {
           "clock"
         ];
         modules-right = [
-          # "custom/dropbox"
           "tray"
           "bluetooth"
           "network"
@@ -55,6 +53,8 @@ in {
         "hyprland/workspaces" = {
           on-click = "activate";
           format = "{icon}";
+          show-special = true;
+          special-visible-only = true;
           format-icons = {
             default = "";
             "1" = "1";
@@ -97,7 +97,7 @@ in {
           tooltip-format-disconnected = "Disconnected";
           interval = 3;
           nospacing = 1;
-          on-click = "ghostty -e nmcli";
+          on-click = "ghostty -e nmtui --class=com.markd.nmtui";
         };
         battery = {
           interval = 5;
@@ -167,15 +167,6 @@ in {
             performance = "󰡴";
           };
         };
-        # "custom/dropbox" = {
-        #   format = "";
-        #   on-click = "nautilus ~/Dropbox";
-        #   exec = "dropbox-cli status";
-        #   return-type = "text";
-        #   interval = 5;
-        #   tooltip = true;
-        #   tooltip-format = "{}";
-        # };
       }
     ];
   };

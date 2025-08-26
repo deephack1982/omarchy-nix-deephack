@@ -20,9 +20,7 @@
   }: {
     nixosModules = {
       default = {
-        config,
         lib,
-        pkgs,
         ...
       }: {
         imports = [
@@ -44,9 +42,7 @@
 
     homeManagerModules = {
       default = {
-        config,
         lib,
-        pkgs,
         osConfig ? {},
         ...
       }: {
