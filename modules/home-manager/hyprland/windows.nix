@@ -34,7 +34,7 @@
 
       # Float in the middle for clipse clipboard manager
       "float, class:(com.markd.clipse|com.markd.nmtui)"
-      "size 622 652, class:(com.markd.clipse|com.markd.nmtui)"
+      "size 722 652, class:(com.markd.clipse|com.markd.nmtui)"
       "stayfocused, class:(com.markd.clipse|com.markd.nmtui)"
     ];
 
