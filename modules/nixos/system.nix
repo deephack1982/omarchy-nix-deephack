@@ -46,6 +46,7 @@ in {
   # Install packages
   environment.systemPackages = packages.systemPackages;
   programs.direnv.enable = true;
+  programs.wshowkeys.enable = true;
 
   # Networking
   services.resolved.enable = true;
