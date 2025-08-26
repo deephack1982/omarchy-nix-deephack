@@ -106,7 +106,7 @@ in {
           interval = 3;
           nospacing = 1;
           on-click = "ghostty --class=com.markd.nmtui -e nmtui";
-          on-click-right = "ghostty --class=com.markd.nmtui -c nmcli"
+          on-click-right = "ghostty --class=com.markd.nmtui -c nmcli";
         };
         battery = {
           interval = 5;
