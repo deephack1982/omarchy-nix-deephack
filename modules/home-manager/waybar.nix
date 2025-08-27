@@ -42,9 +42,9 @@ in {
           "clock"
         ];
         modules-right = [
+          "tray"
           "custom/wf-recorder"
           "custom/kbd-backlight"
-          "tray"
           "bluetooth"
           "network"
           "wireplumber"
