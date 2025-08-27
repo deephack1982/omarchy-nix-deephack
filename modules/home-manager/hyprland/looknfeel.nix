@@ -1,6 +1,5 @@
 {
   config,
-  pkgs,
   ...
 }: let
   hexToRgba = hex: alpha: let

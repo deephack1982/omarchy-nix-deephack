@@ -1,7 +1,6 @@
 {
   config,
   lib,
-  pkgs,
   osConfig ? {},
   ...
 }: let
@@ -46,7 +45,7 @@ in {
         # Use XCompose file
         "XCOMPOSEFILE,~/.XCompose"
         "EDITOR,nvim"
-        
+
         # GTK theme
         "GTK_THEME,${if cfg.theme == "generated_light" then "Adwaita" else "Adwaita:dark"}"
 
