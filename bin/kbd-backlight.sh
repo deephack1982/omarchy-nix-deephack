@@ -3,7 +3,7 @@
 
 DEVICE="/sys/class/leds/framework_laptop\:\:kbd_backlight"
 
-brightness=$(<"$DEVICE/brightness")
+brightness=$(cat "$DEVICE/brightness")
 
 if [ "$brightness" -eq 0 ]; then
     icon=""
