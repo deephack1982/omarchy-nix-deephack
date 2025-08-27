@@ -43,6 +43,7 @@ in {
         ];
         modules-right = [
           "custom/wf-recorder"
+          "custom/kbd-backlight"
           "tray"
           "bluetooth"
           "network"
@@ -76,6 +77,12 @@ in {
             "4" = [];
             "5" = [];
           };
+        };
+        "custom/kbd-backlight" = {
+          exec = "~/.local/share/omarchy/bin/kbd-backlight.sh";
+          interval = 2;
+          return-type = "json";
+          format = "{}";
         };
         "custom/wf-recorder" = {
           exec = "~/.local/share/omarchy/bin/wf-recorder-status.sh";
