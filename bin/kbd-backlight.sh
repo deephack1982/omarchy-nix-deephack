@@ -11,4 +11,4 @@ else
     icon=""
 fi
 
-echo '{"text":"$icon $brightness%","tooltip":"Keyboard backlight: $brightness"}'
+echo "{\"text\":\"$icon $brightness%\",\"tooltip\":\"Keyboard backlight: $brightness\"}"
