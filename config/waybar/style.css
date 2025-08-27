@@ -27,11 +27,12 @@
     color: transparent; /* hides it when not recording */
 }
 
-#custom-kbd-backlight {
+/* #custom-kbd-backlight {
     padding: 0 6px;
     color: #fbc531; /* warm yellow */
-}
+} */
 
+#custom-kbd-backlight,
 #custom-dropbox,
 #cpu,
 #power-profiles-daemon,

@@ -80,7 +80,7 @@ in {
         };
         "custom/kbd-backlight" = {
           exec = "~/.local/share/omarchy/bin/kbd-backlight.sh";
-          interval = 2;
+          interval = 1;
           return-type = "json";
           format = "{}";
         };
