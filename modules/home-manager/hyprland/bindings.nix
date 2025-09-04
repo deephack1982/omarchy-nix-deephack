@@ -88,6 +88,7 @@ in {
         # Scratchpad binds
         "SUPER, grave, exec, pypr toggle term"
         "SUPER, T, exec, pypr toggle task"
+        "SUPER, Q, exec, pypr toggle timr"
 
         # More profiles
         "SUPER SHIFT, B, exec, $browser -P Ittybit"

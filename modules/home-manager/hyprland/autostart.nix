@@ -15,6 +15,7 @@
 
     exec = [
       "pkill -SIGUSR2 waybar || waybar"
+      "pypr reload"
     ];
   };
 }

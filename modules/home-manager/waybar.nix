@@ -93,7 +93,7 @@ in {
         };
         cpu = {
           interval = 1;
-          format = "{icon} {usage:>2}% ";
+          format = "{icon} {usage:>2}%";
           format-icons = [
             "▁"
             "▂"
