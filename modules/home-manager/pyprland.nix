@@ -10,10 +10,16 @@
         plugins = [ "scratchpads" ]
 
         [scratchpads.term]
-        command = "ghostty --title=scratchpad --class=com.markd.scratch"
-        class = "com.markd.scratch"
+        command = "ghostty --title=scratchpad --class=com.markd.termscratch"
+        class = "com.markd.termscratch"
         size = "80% 40%"
         animation = "fromTop"
+
+        [scratchpads.task]
+        command = "ghostty --title=scratchpad --class=com.markd.taskscratch -e taskwarrior-tui"
+        class = "com.markd.taskscratch"
+        size = "50% 90%"
+        animation = "fromRight"
       '';
     };
   };

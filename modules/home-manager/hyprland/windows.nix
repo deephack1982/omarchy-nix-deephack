@@ -20,7 +20,7 @@
       "opacity 0.97 0.9, class:.*"
 
       # Opacity for scratchpad
-      "opacity 0.8 0.8, class:^(com.markd.scratch)$"
+      "opacity 0.8 0.8, class:^(com.markd.termscratch|com.markd.taskscratch)$"
       # Normal chrome Youtube tabs
       "opacity 1 1, class:^(chromium|google-chrome|google-chrome-unstable)$, title:.*Youtube.*"
       "opacity 1 0.97, class:^(chromium|google-chrome|google-chrome-unstable)$"
