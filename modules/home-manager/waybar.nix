@@ -92,8 +92,18 @@ in {
           on-click = "~/.local/share/omarchy/bin/wf-recorder-status.sh click";
         };
         cpu = {
-          interval = 5;
-          format = "󰍛";
+          interval = 1;
+          format = "{icon} {usage:>2}% ";
+          format-icons = [
+            "▁"
+            "▂"
+            "▃"
+            "▄"
+            "▅"
+            "▆"
+            "▇"
+            "█"
+          ];
           on-click = "ghostty -e btm";
         };
         clock = {
