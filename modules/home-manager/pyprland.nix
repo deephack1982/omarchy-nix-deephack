@@ -25,7 +25,7 @@
         command = "ghostty --title=scratchpad --class=com.markd.timrscratch -e timr-tui --notification on --blink on"
         class = "com.markd.timrscratch"
         size = "40% 40%"
-        position = "2% 2%"
+        position = "1% 3%"
         animation = "fromLeft"
       '';
     };
