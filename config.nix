@@ -76,5 +76,9 @@ lib: {
       default = [];
       description = "Packages to exclude from the default system packages";
     };
+    terminal = lib.mkOption {
+      type = lib.types.str;
+      description = "Terminal invokation to use"
+    }
   };
 }
