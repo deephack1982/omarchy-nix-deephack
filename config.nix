@@ -79,6 +79,6 @@ lib: {
     terminal = lib.mkOption {
       type = lib.types.str;
       description = "Terminal invokation to use"
-    }
+    };
   };
 }
