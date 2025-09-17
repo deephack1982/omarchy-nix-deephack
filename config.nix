@@ -80,5 +80,10 @@ lib: {
       type = lib.types.str;
       description = "Terminal invokation to use";
     };
+    text_greet = lib.mkOption {
+      type = lib.types.bool;
+      default = false;
+      description = "Should we use a text terminal based greeter";
+    }
   };
 }
