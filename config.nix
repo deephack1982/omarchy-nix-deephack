@@ -84,6 +84,6 @@ lib: {
       type = lib.types.bool;
       default = false;
       description = "Should we use a text terminal based greeter";
-    }
+    };
   };
 }
