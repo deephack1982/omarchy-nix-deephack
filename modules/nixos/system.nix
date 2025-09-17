@@ -20,28 +20,10 @@ in {
   services.greetd = {
     enable = true;
     #settings.default_session.command = "${pkgs.cage}/bin/cage -s -- ${pkgs.greetd.gtkgreet}/bin/gtkgreet -l -c Hyprland";
-    config =
-    if cfg.text_greet then {
-      settings.default_session.command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Hyprland";
-    }
-    else {
-      settings.hyprland_session.command = "${pkgs.hyprland}/bin/Hyprland";
-    };
+    settings.default_session.command = if cfg.text_greet
+    then "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Hyprland"
+    else "${pkgs.hyprland}/bin/Hyprland";
   };
-
-  config =
-  if (!cfg.text_greet) then {
-    programs.regreet = {
-      enable = true;
-      settings = {
-        GTK = {
-          application_prefer_dark_theme = true;
-        };
-      };
-    };
-  }
-  else
-    {};
 
   # Install packages
   environment.systemPackages = packages.systemPackages;
