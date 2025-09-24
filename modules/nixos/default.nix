@@ -8,6 +8,6 @@ inputs: {
 in {
   imports = [
     (import ./hyprland.nix inputs)
+    (import ./system.nix)
   ];
-  environment.systemPackages = packages.systemPackages;
 }
