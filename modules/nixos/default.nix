@@ -9,4 +9,5 @@ in {
   imports = [
     (import ./hyprland.nix inputs)
   ];
+  environment.systemPackages = packages.systemPackages;
 }
