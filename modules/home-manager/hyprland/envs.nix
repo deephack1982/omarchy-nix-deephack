@@ -55,7 +55,7 @@ in {
       ];
 
     xwayland = {
-      enable = false;
+      enabled = false;
     };
 
     # Don't show update on first launch
