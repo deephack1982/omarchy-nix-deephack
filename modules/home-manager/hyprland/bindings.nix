@@ -91,7 +91,7 @@ in {
         "SUPER, Q, exec, pypr toggle timr"
 
         # More profiles
-        "SUPER SHIFT, B, exec, $browser -P Ittybit"
+        "SUPER SHIFT, B, exec, $browser -P Itancan"
 
         # Screenshots
         ", PRINT, exec, hyprshot -m region -o ~/Pictures/Screenshots"
