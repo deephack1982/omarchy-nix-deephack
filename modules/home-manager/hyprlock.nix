@@ -23,8 +23,9 @@ in {
       };
       background = {
         monitor = "";
-        path = selected_wallpaper_path;
-        # blur_passes = 3;
+        path = "screenshot";
+        blur_passes = 3;
+        vibrancy = 0.2;
         # brightness = 0.5;
       };
 
