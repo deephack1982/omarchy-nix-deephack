@@ -24,7 +24,8 @@ in {
       background = {
         monitor = "";
         path = "screenshot";
-        blur_passes = 3;
+        blur_passes = 1;
+        blue_size = 4;
         vibrancy = 0.2;
         # brightness = 0.5;
       };
