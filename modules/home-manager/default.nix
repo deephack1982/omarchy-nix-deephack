@@ -31,7 +31,6 @@ in {
     (import ./direnv.nix)
     (import ./git.nix)
     (import ./mako.nix)
-    (import ./starship.nix)
     (import ./waybar.nix inputs)
     (import ./wofi.nix)
     (import ./zoxide.nix)
