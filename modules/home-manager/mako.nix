@@ -35,7 +35,7 @@ in {
       format = "<b>%s</b>\\n%b";
       markup = true;
 
-      on-notify = "exec mpv ~/.local/share/omarchy/sounds/notification.wav"
+      on-notify = "exec mpv ~/.local/share/omarchy/sounds/notification.wav";
     };
   };
 }
