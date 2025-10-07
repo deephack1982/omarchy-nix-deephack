@@ -42,6 +42,10 @@ in {
       source = ../../bin;
       recursive = true;
     };
+    ".local/share/omarchy/sounds" = {
+    source = ../../sounds;
+    recursive = true;
+    };
   };
   home.packages = packages.homePackages;
 
