@@ -85,8 +85,8 @@ in {
 
         # Grouped windows binds
         "SUPER, Tab, changegroupactive, f"
-        "SUPER, left, movewindoworgroup, left"
-        "SUPER, right, movewindoworgroup, right"
+        "SUPER ALT, left, movewindoworgroup, left"
+        "SUPER ALT, right, movewindoworgroup, right"
 
         # Scratchpad binds
         "SUPER, grave, exec, pypr toggle term"
