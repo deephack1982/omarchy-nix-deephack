@@ -28,7 +28,7 @@ in {
         "SUPER, J, togglesplit, # dwindle"
         "SUPER, P, pseudo, # dwindle"
         "SUPER, V, togglefloating,"
-        "SUPER SHIFT, Plus, fullscreen,"
+        "SUPER, F, fullscreen,"
 
         # Move focus with mainMod + arrow keys
         "SUPER, left, movefocus, l"
@@ -85,6 +85,8 @@ in {
 
         # Grouped windows binds
         "SUPER, Tab, changegroupactive, f"
+        "SUPER, left, movewindoworgroup, left"
+        "SUPER, right, movewindoworgroup, right"
 
         # Scratchpad binds
         "SUPER, grave, exec, pypr toggle term"
