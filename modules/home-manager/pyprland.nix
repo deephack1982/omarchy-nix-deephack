@@ -10,7 +10,7 @@
         plugins = [ "scratchpads" ]
 
         [scratchpads.term]
-        command = "ghostty --title=scratchpad --class=com.markd.termscratch"
+        command = "ghostty --title=scratchpad --class=com.markd.termscratch -e bash"
         class = "com.markd.termscratch"
         size = "80% 40%"
         animation = "fromTop"
