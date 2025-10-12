@@ -63,7 +63,7 @@ lib: {
         "SUPER SHIFT, G, exec, $webapp https://web.whatsapp.com/"
 
         "SUPER, return, exec, $terminal"
-        "SUPER, F, exec, $fileManager"
+        "SUPER SHIFT, F, exec, $fileManager"
         "SUPER, B, exec, $browser"
         "SUPER, M, exec, $webapp=https://music.youtube.com"
         "SUPER, N, exec, $editor"

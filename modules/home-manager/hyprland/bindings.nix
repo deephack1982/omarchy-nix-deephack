@@ -26,7 +26,7 @@ in {
 
         # Control tiling
         "SUPER, J, togglesplit, # dwindle"
-        "SUPER, P, pseudo, # dwindle"
+        "SUPER, P, pin"
         "SUPER, V, togglefloating,"
         "SUPER, F, fullscreen,"
 
