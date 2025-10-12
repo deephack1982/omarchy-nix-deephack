@@ -8,8 +8,13 @@ pdf() {
 }
 
 image() {
-    FILE=$(ls ~/Pictures | wofi -d)
+    FILE=$(find ~/Pictures -type f | wofi -d)
     satty --filename ~/Pictures/$FILE
+}
+
+video() {
+    FILE=$(find ~/Videos -type f | wofi -d)
+    vlc $FILE
 }
 
 collect() {
@@ -24,6 +29,9 @@ case "$SELECTION" in
         ;;
     " Open image")
         image
+        ;;
+    "󰸬 Open video")
+        video
         ;;
     "󰃨 Collect Garbage")
         collect
