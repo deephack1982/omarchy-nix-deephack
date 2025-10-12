@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SELECTION=$(printf "󰈦 Open PDF\n Open image\n󰃨 Collect Garbage\n󰈆 Exit" | wofi -d)
+SELECTION=$(printf "󰈦 Open PDF\n Open image\n󰃨 Collect Garbage\n󰸬 Open video\n󰈆 Exit" | wofi -d)
 
 pdf() {
     FILE=$(ls ~/Downloads/*.pdf | wofi -d)
