@@ -182,7 +182,10 @@ in {
           on-click-right = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; # Updated command
           max-volume = 150; # Optional: allow volume over 100%
         };
-        tray = {spacing = 13;};
+        tray = {
+          spacing = 13;
+          show-passive-items = true;
+        };
         power-profiles-daemon = {
           format = "{icon}";
           tooltip-format = "Power profile: {profile}";

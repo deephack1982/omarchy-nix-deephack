@@ -3,7 +3,7 @@
 SELECTION=$(printf "󰈦 Open PDF\n Open image\n󰃨 Collect Garbage\n󰸬 Open video\n󰈆 Exit" | wofi -d)
 
 pdf() {
-    FILE=$(ls ~/Downloads/*.pdf | wofi -d)
+    FILE=$(find ~/Downloads -type f -iname '*.pdf' | wofi -d)
     zathura $FILE
 }
 
