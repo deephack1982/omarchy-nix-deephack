@@ -9,7 +9,7 @@ pdf() {
 
 image() {
     FILE=$(find ~/Pictures -type f | wofi -d)
-    satty --filename ~/Pictures/$FILE
+    satty --filename $FILE
 }
 
 video() {
