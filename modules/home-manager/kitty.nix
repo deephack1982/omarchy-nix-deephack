@@ -6,7 +6,7 @@
   # palette = config.colorScheme.palette;
 in {
   programs.kitty = {
-    enabled = true;
+    enable = true;
     shellIntegration.enableBashIntegration = true;
     enableGitIntegration = true;
     themeFile = "tokyo_night_night";
