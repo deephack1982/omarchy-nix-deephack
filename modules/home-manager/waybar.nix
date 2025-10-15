@@ -104,7 +104,7 @@ in {
             "▇"
             "█"
           ];
-          on-click = "ghostty -e btm";
+          on-click = "kitty -e btm";
         };
         clock = {
           format = "{:%A %I:%M %p}";
@@ -122,8 +122,8 @@ in {
           tooltip-format-disconnected = "Disconnected";
           interval = 3;
           nospacing = 1;
-          on-click = "ghostty --class=com.markd.nmtui -e nmtui";
-          on-click-right = "ghostty --class=com.markd.nmtui -e nmcli";
+          on-click = "kitty --class=com.markd.nmtui nmtui";
+          on-click-right = "kitty --class=com.markd.nmtui nmcli";
         };
         battery = {
           interval = 5;

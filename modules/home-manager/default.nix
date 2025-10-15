@@ -26,7 +26,7 @@ in {
     (import ./hyprlock.nix inputs)
     (import ./hyprpaper.nix)
     (import ./hypridle.nix)
-    (import ./ghostty.nix)
+    (import ./kitty.nix)
     (import ./btop.nix)
     (import ./direnv.nix)
     (import ./git.nix)
@@ -35,6 +35,7 @@ in {
     (import ./wofi.nix)
     (import ./zoxide.nix)
     (import ./pyprland.nix)
+    (import ./bat.nix)
   ];
 
   home.file = {

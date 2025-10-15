@@ -10,19 +10,19 @@
         plugins = [ "scratchpads" ]
 
         [scratchpads.term]
-        command = "ghostty --title=scratchpad --class=com.markd.termscratch -e bash"
+        command = "kitty --title=scratchpad --class=com.markd.termscratch bash"
         class = "com.markd.termscratch"
         size = "80% 40%"
         animation = "fromTop"
 
         [scratchpads.task]
-        command = "ghostty --title=scratchpad --class=com.markd.taskscratch -e taskwarrior-tui"
+        command = "kitty --title=scratchpad --class=com.markd.taskscratch taskwarrior-tui"
         class = "com.markd.taskscratch"
         size = "50% 90%"
         animation = "fromRight"
 
         [scratchpads.timr]
-        command = "ghostty --title=scratchpad --class=com.markd.timrscratch -e timr-tui --notification on --blink on"
+        command = "kitty --title=scratchpad --class=com.markd.timrscratch timr-tui --notification on --blink on"
         class = "com.markd.timrscratch"
         size = "40% 40%"
         position = "1% 3%"
