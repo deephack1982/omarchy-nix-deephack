@@ -18,6 +18,19 @@
     margin-right: 3px;
 }
 
+#workspaces button.active {
+    color: green;
+}
+
+#workspaces button.empty {
+    color: white;
+}
+
+#workspaces button.urgent {
+    background-color: red;
+    border-radius: 1em;
+}
+
 #custom-wf-recorder.recording {
     color: red;
     font-weight: bold;
