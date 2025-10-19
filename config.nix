@@ -84,5 +84,9 @@ lib: {
       type = lib.types.str;
       description = "Editor invocation to use";
     };
+    kb_layout = lib.mkOption {
+      type = lib.types.str;
+      description = "Keyboard layout in Hyprland"
+    }
   };
 }

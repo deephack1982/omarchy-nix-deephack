@@ -1,12 +1,15 @@
 {
   lib,
+  config,
   ...
-}: {
+}: let
+  cfg = config.omarchy;
+in {
   wayland.windowManager.hyprland.settings = {
     # Environment variables
     # https://wiki.hyprland.org/Configuring/Variables/#input
     input = lib.mkDefault {
-      kb_layout = "us";
+      kb_layout = cfg.keyboard_layout;
       # kb_variant =
       # kb_model =
       kb_options = compose:caps;
