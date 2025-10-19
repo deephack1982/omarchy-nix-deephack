@@ -78,6 +78,13 @@ in {
             "5" = [];
           };
         };
+        "idle_inhibitor" = {
+          format = "{icon}";
+          format-icons = {
+            activated = "";
+            deactivated = "";
+          };
+        };
         "custom/kbd-backlight" = {
           exec = "~/.local/share/omarchy/bin/kbd-backlight.sh";
           interval = 1;

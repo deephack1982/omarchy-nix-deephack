@@ -78,12 +78,11 @@ lib: {
     };
     terminal = lib.mkOption {
       type = lib.types.str;
-      description = "Terminal invokation to use";
+      description = "Terminal invocation to use";
     };
-    text_greet = lib.mkOption {
-      type = lib.types.bool;
-      default = false;
-      description = "Should we use a text terminal based greeter";
+    editor = lib.mkOption {
+      type = lib.type.str;
+      description = "Editor invocation to use";
     };
   };
 }

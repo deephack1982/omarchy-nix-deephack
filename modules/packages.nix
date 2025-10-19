@@ -35,6 +35,7 @@ let
     unzip
     wget
     gnumake
+    jq
   ];
 
   # Discretionary packages - can be excluded by user

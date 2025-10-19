@@ -22,7 +22,7 @@ in {
     "$passwordManager" = lib.mkDefault "keepassxc";
     "$messenger" = lib.mkDefault "signal-desktop";
     "$webapp" = lib.mkDefault "$browser -P Webapp ";
-    "$editor" = lib.mkDefault "zeditor";
+    "$editor" = lib.mkDefault cfg.editor;
 
     monitor = cfg.monitors;
   };
