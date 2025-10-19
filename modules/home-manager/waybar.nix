@@ -44,6 +44,7 @@ in {
         modules-right = [
           "tray"
           "custom/wf-recorder"
+          "idle_inhibitor"
           "custom/kbd-backlight"
           "bluetooth"
           "network"
