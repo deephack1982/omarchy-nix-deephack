@@ -81,7 +81,7 @@ lib: {
       description = "Terminal invocation to use";
     };
     editor = lib.mkOption {
-      type = lib.type.str;
+      type = lib.types.str;
       description = "Editor invocation to use";
     };
   };
