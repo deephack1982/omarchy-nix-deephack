@@ -9,7 +9,7 @@ in {
     # Environment variables
     # https://wiki.hyprland.org/Configuring/Variables/#input
     input = lib.mkDefault {
-      kb_layout = cfg.keyboard_layout;
+      kb_layout = cfg.kb_layout   ;
       # kb_variant =
       # kb_model =
       kb_options = compose:caps;
