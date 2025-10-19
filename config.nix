@@ -86,7 +86,7 @@ lib: {
     };
     kb_layout = lib.mkOption {
       type = lib.types.str;
-      description = "Keyboard layout in Hyprland"
-    }
+      description = "Keyboard layout in Hyprland";
+    };
   };
 }
