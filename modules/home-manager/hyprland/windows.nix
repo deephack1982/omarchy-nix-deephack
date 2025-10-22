@@ -32,6 +32,9 @@
       # Zed editor rules
       "group, class:^(dev.zed.Zed)$"
 
+      # Image viewer rules
+      "float, class:swayimg"
+
       # Fix some dragging issues with XWayland
       "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
 

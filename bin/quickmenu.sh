@@ -4,17 +4,17 @@ SELECTION=$(printf "󰈦 Open PDF\n Open image\n󰃨 Collect Garbage\n󰸬 Op
 
 pdf() {
     FILE=$(find ~/Downloads -type f -iname '*.pdf' | wofi -d)
-    zathura $FILE
+    zathura ${FILE@Q}
 }
 
 image() {
     FILE=$(find ~/Pictures -type f | wofi -d)
-    satty --filename $FILE
+    swayimg ${FILE@Q}
 }
 
 video() {
     FILE=$(find ~/Videos -type f | wofi -d)
-    vlc $FILE
+    vlc ${FILE@Q}
 }
 
 collect() {

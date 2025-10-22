@@ -36,6 +36,8 @@ let
     wget
     gnumake
     jq
+    swayimg
+    wob
   ];
 
   # Discretionary packages - can be excluded by user
