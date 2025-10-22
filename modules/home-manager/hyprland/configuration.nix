@@ -17,7 +17,7 @@ in {
     # Default applications
     "$terminal" = lib.mkDefault cfg.terminal;
     "$fileManager" = lib.mkDefault "nautilus --new-window";
-    "$browser" = lib.mkDefault "firefox";
+    "$browser" = lib.mkDefault cfg.browser;
     "$music" = lib.mkDefault "spotify";
     "$passwordManager" = lib.mkDefault "keepassxc";
     "$messenger" = lib.mkDefault "signal-desktop";

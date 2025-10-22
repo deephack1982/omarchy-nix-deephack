@@ -84,6 +84,11 @@ lib: {
       type = lib.types.str;
       description = "Editor invocation to use";
     };
+    browser = lib.mkOption {
+      type = lib.types.str;
+      default = "firefox";
+      decsription = "Browser invocation to use";
+    };
     kb_layout = lib.mkOption {
       type = lib.types.str;
       description = "Keyboard layout in Hyprland";
