@@ -87,7 +87,7 @@ lib: {
     browser = lib.mkOption {
       type = lib.types.str;
       default = "firefox";
-      decsription = "Browser invocation to use";
+      description = "Browser invocation to use";
     };
     kb_layout = lib.mkOption {
       type = lib.types.str;
