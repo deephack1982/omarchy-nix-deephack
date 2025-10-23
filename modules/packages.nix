@@ -38,6 +38,7 @@ let
     jq
     swayimg
     wob
+    killall
   ];
 
   # Discretionary packages - can be excluded by user
