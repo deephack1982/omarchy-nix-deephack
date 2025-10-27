@@ -10,7 +10,6 @@
       "tail -f /tmp/wobpipe | wob"
       "pypr --debug /tmp/pypr.log"
       "uwsm-app -- keepassxc --minimized"
-      "uwsm-app -- waybar"
     ];
 
     # exec = [
