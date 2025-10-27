@@ -9,7 +9,7 @@
       "mkfifo -m 600 /tmp/wobpipe"
       "tail -f /tmp/wobpipe | wob"
       "pypr --debug /tmp/pypr.log"
-      "uwsm-app -- keepassxc --minimized"
+      "sleep 3 && uwsm-app -- keepassxc --minimized"
     ];
 
     # exec = [
