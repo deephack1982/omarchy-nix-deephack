@@ -3,18 +3,18 @@
 }: {
   wayland.windowManager.hyprland.settings = {
     exec-once = [
-      "hyprsunset"
-      "systemctl --user start hyprpolkitagent"
-      "wl-clip-persist --clipboard regular"
-      "clipse -listen"
+      "uwsm-app -- hyprsunset"
+      "uwsm-app -- wl-clip-persist --clipboard regular"
+      "uwsm-app -- clipse -listen"
       "mkfifo -m 600 /tmp/wobpipe"
       "tail -f /tmp/wobpipe | wob"
-      "pypr --debug /tmp/pypr.log"
-      "keepassxc --minimized"
+      "uwsm-app -- pypr --debug /tmp/pypr.log"
+      "uwsm-app -- keepassxc --minimized"
+      "uwsm-app -- waybar"
     ];
 
     exec = [
-      "killall waybar && waybar"
+      "echo "Nothing"
     ];
   };
 }
