@@ -13,8 +13,7 @@
       "uwsm-app -- waybar"
     ];
 
-    exec = [
-      "echo "Nothing""
-    ];
+    # exec = [
+    # ];
   };
 }
