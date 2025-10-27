@@ -14,7 +14,7 @@
     ];
 
     exec = [
-      "echo "Nothing"
+      "echo "Nothing""
     ];
   };
 }
