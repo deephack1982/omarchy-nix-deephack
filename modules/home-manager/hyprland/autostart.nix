@@ -3,7 +3,7 @@
 }: {
   wayland.windowManager.hyprland.settings = {
     exec-once = [
-      "uwsm-app -- hyprsunset"
+      "hyprsunset"
       "wl-clip-persist --clipboard regular"
       "clipse -listen"
       "mkfifo -m 600 /tmp/wobpipe"

@@ -19,7 +19,7 @@ in {
 
         # End active session
         "SUPER, ESCAPE, exec, hyprlock"
-        "SUPER SHIFT, ESCAPE, exit,"
+        "SUPER SHIFT, ESCAPE, exec, uwsm stop"
         # "SUPER CTRL, ESCAPE, exec, reboot"
         # "SUPER SHIFT CTRL, ESCAPE, exec, systemctl poweroff"
         "SUPER, K, exec, ~/.local/share/omarchy/bin/omarchy-show-keybindings"
