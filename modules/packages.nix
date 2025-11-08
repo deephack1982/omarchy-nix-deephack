@@ -15,6 +15,7 @@ let
     wl-clip-persist
     wf-recorder
     ffmpeg
+    impala
   ];
 
   # Essential system packages - cannot be excluded
