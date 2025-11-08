@@ -11,5 +11,8 @@ in {
   environment.systemPackages = packages.systemPackages;
   networking.wireless.iwd.enable = true;
   networking.networkmanager.wifi.backend = "iwd";
-  services.connman.wifi.backend = "iwd";
+  services.connman = {
+    enable = true;
+    wifi.backend = "iwd";
+  };
 }
