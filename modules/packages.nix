@@ -16,6 +16,7 @@ let
     wf-recorder
     ffmpeg
     impala
+    bluetui
   ];
 
   # Essential system packages - cannot be excluded
@@ -25,7 +26,6 @@ let
     libnotify
     nautilus
     alejandra
-    blueberry
     clipse
     fzf
     zoxide

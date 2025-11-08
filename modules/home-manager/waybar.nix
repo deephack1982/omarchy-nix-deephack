@@ -179,7 +179,7 @@ in {
           format-disabled = "󰂲";
           format-connected = "C";
           tooltip-format = "Devices connected: {num_connections}";
-          on-click = "blueberry";
+          on-click = "kitty --class=com.markd.nmtui bluetui";
         };
         wireplumber = {
           # Changed from "pulseaudio"
