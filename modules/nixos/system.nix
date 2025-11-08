@@ -10,7 +10,7 @@
 in {
   environment.systemPackages = packages.systemPackages;
   networking.wireless.iwd.enable = true;
-  networking.networkmanager.wifi.backend = "iwd";
+  networking.networkmanager.enable = lib.mkDefault false;
   services.connman = {
     enable = true;
     wifi.backend = "iwd";
