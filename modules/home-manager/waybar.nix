@@ -83,8 +83,8 @@ in {
         "idle_inhibitor" = {
           format = "{icon}";
           format-icons = {
-            activated = "󰈈";
-            deactivated = "󰛑";
+            activated = "󰈈 ";
+            deactivated = "󰛑 ";
           };
         };
         "custom/kbd-backlight" = {
@@ -131,7 +131,7 @@ in {
           tooltip-format-disconnected = "Disconnected";
           interval = 3;
           nospacing = 1;
-          on-click = "kitty --class=com.markd.nmtui nmtui";
+          on-click = "kitty --class=com.markd.nmtui impala";
           on-click-right = "kitty --class=com.markd.nmtui nmcli";
         };
         battery = {
