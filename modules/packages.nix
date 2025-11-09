@@ -9,7 +9,7 @@ let
     pamixer
     playerctl
     gnome-themes-extra
-    pavucontrol
+    wiremix
     pyprland
     wl-clipboard
     wl-clip-persist

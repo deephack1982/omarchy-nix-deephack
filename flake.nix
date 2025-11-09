@@ -5,6 +5,7 @@
     hyprland.url = "github:hyprwm/Hyprland";
     nix-colors.url = "github:misterio77/nix-colors";
     pyprland.url = "github:hyprland-community/pyprland";
+    wiremix.url = "github:tsowell/wiremix";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -14,6 +15,7 @@
     self,
     nixpkgs,
     pyprland,
+    wiremix,
     hyprland,
     nix-colors,
     home-manager,
@@ -34,6 +36,7 @@
           nixpkgs.overlays = [
             (final: prev: {
               pyprland = pyprland.packages.${final.system}.default;
+              wiremix = wiremix.packages.${final.system}.default;
             })
           ];
         };
