@@ -2,7 +2,7 @@
   description = "Omarchy - Base configuration flake";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    hyprland.url = "github:hyprwm/Hyprland";
+    hyprland.url = "github:hyprwm/Hyprland/v0.52.1";
     nix-colors.url = "github:misterio77/nix-colors";
     pyprland.url = "github:hyprland-community/pyprland";
     wiremix.url = "github:tsowell/wiremix";
