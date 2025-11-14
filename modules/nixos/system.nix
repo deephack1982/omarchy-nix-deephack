@@ -14,5 +14,10 @@ in {
   services.connman = {
     enable = true;
     wifi.backend = "iwd";
+    enableVPN = true;
+    package = pkgs.connman.override {
+      enableWireguard = true;
+    };
   };
+  networking.wireguard.enable = true;
 }
