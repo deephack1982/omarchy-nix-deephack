@@ -22,10 +22,6 @@ in {
       touchpad = {
         natural_scroll = true;
       };
-      cursor = {
-        hide_on_keypress = true;
-        inactive_timeout = 5;
-      };
     };
 
     # https://wiki.hyprland.org/Configuring/Variables/#gestures
