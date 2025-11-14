@@ -17,6 +17,7 @@ let
     ffmpeg
     impala
     bluetui
+    rose-pine-hyprcursor
   ];
 
   # Essential system packages - cannot be excluded

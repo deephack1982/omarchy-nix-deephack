@@ -25,7 +25,7 @@ in {
 
         # Cursor theme
         "XCURSOR_THEME,Adwaita"
-        "HYPRCURSOR_THEME,Adwaita"
+        "HYPRCURSOR_THEME,rose-pine-hyprcursor"
 
         # Force all apps to use Wayland
         "GDK_BACKEND,wayland"
