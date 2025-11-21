@@ -17,7 +17,6 @@ let
     ffmpeg
     impala
     bluetui
-    jocalsend
     rose-pine-hyprcursor
   ];
 

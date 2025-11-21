@@ -173,6 +173,9 @@ in {
             warning = 20;
             critical = 10;
           };
+          events = {
+            on-discharging-critical = "notify-send -u critical 'Battery is very low!'";
+          };
         };
         bluetooth = {
           format = "󰂯";

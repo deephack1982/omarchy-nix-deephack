@@ -20,4 +20,5 @@ in {
     };
   };
   networking.wireguard.enable = true;
+  services.upower.enable = true;
 }
