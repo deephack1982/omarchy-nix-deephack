@@ -23,6 +23,8 @@
     nixosModules = {
       default = {
         lib,
+        pkgs,
+        config,
         ...
       }: {
         imports = [
@@ -31,6 +33,17 @@
 
         options.omarchy = (import ./config.nix lib).omarchyOptions;
         config = {
+          _module.args.pkgs = let
+            system = pkgs.stdenv.hostPlatform.system;
+            overlays = config.nixpkgs.overlays or [];
+            configOpts = config.nixpkgs.config or {};
+          in
+            import nixpkgs {
+              inherit system;
+              overlays = overlays;
+              config = configOpts;
+            };
+
           nixpkgs.config.allowUnfree = true;
 
           nixpkgs.overlays = [
