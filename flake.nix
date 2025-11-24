@@ -32,27 +32,25 @@
         ];
 
         options.omarchy = (import ./config.nix lib).omarchyOptions;
-        config = {
-          nixpkgs.pkgs =
+        config =
           let
             system = config.nixpkgs.system or builtins.currentSystem;
-            overlays = config.nixpkgs.overlays or [];
-            configOpts = config.nixpkgs.config or {};
-          in
-            import nixpkgs {
+            userOverlays = config.nixpkgs.overlays or [];
+            userConfig = config.nixpkgs.config or {};
+            packageOverlay = (final: prev: {
+              pyprland = pyprland.packages.${final.system}.default;
+              wiremix = wiremix.packages.${final.system}.default;
+            });
+            overlays = userOverlays ++ [packageOverlay];
+            configOpts = userConfig // {allowUnfree = true;};
+          in {
+            nixpkgs.pkgs = import nixpkgs {
               inherit system overlays;
               config = configOpts;
             };
 
-          nixpkgs.config.allowUnfree = true;
-
-          nixpkgs.overlays = [
-            (final: prev: {
-              pyprland = pyprland.packages.${final.system}.default;
-              wiremix = wiremix.packages.${final.system}.default;
-            })
-          ];
-        };
+            nixpkgs.overlays = overlays;
+          };
       };
     };
 
