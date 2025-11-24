@@ -35,7 +35,7 @@
         config =
           let
             inherit (lib) mkAfter;
-            system = pkgs.stdenv.hostPlatform.system;
+            system = builtins.currentSystem;
             packageOverlay = (final: prev: {
               pyprland = pyprland.packages.${final.system}.default;
               wiremix = wiremix.packages.${final.system}.default;
