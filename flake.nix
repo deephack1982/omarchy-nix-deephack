@@ -33,8 +33,9 @@
 
         options.omarchy = (import ./config.nix lib).omarchyOptions;
         config = {
-          _module.args.pkgs = let
-            system = pkgs.stdenv.hostPlatform.system;
+          _module.args.pkgs =
+          let
+            system = config.nixpkgs.system or builtins.currentSystem;
             overlays = config.nixpkgs.overlays or [];
             configOpts = config.nixpkgs.config or {};
           in
