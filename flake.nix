@@ -23,8 +23,6 @@
     nixosModules = {
       default = {
         lib,
-        pkgs,
-        config,
         ...
       }: {
         imports = [
@@ -32,18 +30,18 @@
         ];
 
         options.omarchy = (import ./config.nix lib).omarchyOptions;
-        config =
-          let
-            inherit (lib) mkAfter mkDefault;
-            packageOverlay = (final: prev: {
+        config = {
+          nixpkgs.config.allowUnfree = true;
+
+          nixpkgs.overlays = [
+            (final: prev: {
               pyprland = pyprland.packages.${final.system}.default;
               wiremix = wiremix.packages.${final.system}.default;
-            });
-          in {
-            nixpkgs.config.allowUnfree = mkDefault true;
-            nixpkgs.overlays = mkAfter [ packageOverlay ];
-          };
+            })
+          ];
+        };
       };
+
     };
 
     homeManagerModules = {
