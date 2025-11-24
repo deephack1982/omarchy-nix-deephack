@@ -1,6 +1,7 @@
 {
   ...
-}: {
+}:
+{
   wayland.windowManager.hyprland.settings = {
     windowrule = [
       # See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
@@ -40,7 +41,7 @@
 
       # Float in the middle for clipse clipboard manager
       "float, class:(com.markd.clipse|com.markd.nmtui)"
-      "size 800 700, class:(com.markd.clipse|com.markd.nmtui)"
+      "size 1433 744, class:(com.markd.clipse|com.markd.nmtui)"
       "stayfocused, class:(com.markd.clipse|com.markd.nmtui)"
     ];
 
