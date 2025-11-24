@@ -34,20 +34,13 @@
         options.omarchy = (import ./config.nix lib).omarchyOptions;
         config =
           let
-            inherit (lib) mkAfter;
-            system = builtins.currentSystem;
+            inherit (lib) mkAfter mkDefault;
             packageOverlay = (final: prev: {
               pyprland = pyprland.packages.${final.system}.default;
               wiremix = wiremix.packages.${final.system}.default;
             });
           in {
-            nixpkgs.pkgs = import nixpkgs {
-              inherit system;
-              config = {
-                allowUnfree = true;
-              };
-            };
-
+            nixpkgs.config.allowUnfree = mkDefault true;
             nixpkgs.overlays = mkAfter [ packageOverlay ];
           };
       };
