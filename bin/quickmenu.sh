@@ -23,6 +23,11 @@ collect() {
     notify-send nix-collect-grabage "Completed garbage collection"
 }
 
+send_file() {
+    FILE=$(find ~ -type f | wofi -d)
+    kitty --class=com.markd.nmtui jocalsend "$FILE"
+}
+
 case "$SELECTION" in
     "󰈦 Open PDF")
         pdf
@@ -35,5 +40,8 @@ case "$SELECTION" in
         ;;
     "󰃨 Collect Garbage")
         collect
+        ;;
+    "󰈪 Send File")
+        send_file
         ;;
 esac

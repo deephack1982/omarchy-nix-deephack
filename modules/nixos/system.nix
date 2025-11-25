@@ -1,13 +1,17 @@
-
 {
   config,
   pkgs,
   lib,
   ...
-}: let
+}:
+let
   cfg = config.omarchy;
-  packages = import ../packages.nix {inherit pkgs lib; exclude_packages = cfg.exclude_packages;};
-in {
+  packages = import ../packages.nix {
+    inherit pkgs lib;
+    exclude_packages = cfg.exclude_packages;
+  };
+in
+{
   environment.systemPackages = packages.systemPackages;
   networking.wireless.iwd.enable = true;
   networking.networkmanager.enable = lib.mkDefault false;
@@ -21,4 +25,6 @@ in {
   };
   networking.wireguard.enable = true;
   services.upower.enable = true;
+  networking.firewall.allowedTCPPorts = [ 53317 ];
+  networking.firewall.allowedUDPPorts = [ 53317 ];
 }
