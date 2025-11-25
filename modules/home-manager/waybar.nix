@@ -1,12 +1,15 @@
-inputs: {
+inputs:
+{
   config,
   ...
-}: let
+}:
+let
   palette = config.colorScheme.palette;
   convert = inputs.nix-colors.lib.conversions.hexToRGBString;
   backgroundRgb = "rgb(${convert ", " palette.base00})";
   foregroundRgb = "rgb(${convert ", " palette.base05})";
-in {
+in
+{
   home.file = {
     ".config/waybar/" = {
       source = ../../config/waybar;
@@ -73,11 +76,11 @@ in {
             active = "󱓻";
           };
           persistent-workspaces = {
-            "1" = [];
-            "2" = [];
-            "3" = [];
-            "4" = [];
-            "5" = [];
+            "1" = [ ];
+            "2" = [ ];
+            "3" = [ ];
+            "4" = [ ];
+            "5" = [ ];
           };
         };
         "idle_inhibitor" = {
@@ -91,7 +94,7 @@ in {
           exec = "~/.local/share/omarchy/bin/kbd-backlight.sh";
           interval = 1;
           return-type = "json";
-          format = "{}";
+          format = "{ }";
         };
         "custom/wf-recorder" = {
           exec = "~/.local/share/omarchy/bin/wf-recorder-status.sh";
@@ -121,18 +124,26 @@ in {
           tooltip = false;
         };
         network = {
-          format-icons = ["󰤯" "󰤟" "󰤢" "󰤥" "󰤨"];
+          format-icons = [
+            "󰤯"
+            "󰤟"
+            "󰤢"
+            "󰤥"
+            "󰤨"
+          ];
           format = "{icon}";
           format-wifi = "{icon}";
           format-ethernet = "󰀂";
           format-disconnected = "󰖪";
+          format-disabled = " ";
           tooltip-format-wifi = "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}";
           tooltip-format-ethernet = "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}";
           tooltip-format-disconnected = "Disconnected";
+          tooltip-format-disabled = "Airplane Mode";
           interval = 3;
           nospacing = 1;
           on-click = "kitty --class=com.markd.nmtui impala";
-          on-click-right = "kitty --class=com.markd.nmtui nmcli";
+          on-click-right = "sudo rfkill toggle wifi";
         };
         battery = {
           interval = 5;
@@ -183,6 +194,7 @@ in {
           format-connected = "C";
           tooltip-format = "Devices connected: {num_connections}";
           on-click = "kitty --class=com.markd.nmtui bluetui";
+          on-click-right = "sudo rfkill toggle bluetooth";
         };
         wireplumber = {
           # Changed from "pulseaudio"

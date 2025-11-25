@@ -12,6 +12,7 @@ image() {
     swayimg "$FILE"
 }
 
+
 video() {
     FILE=$(find ~/Videos -type f | wofi -d)
     vlc "$FILE"
@@ -24,8 +25,8 @@ collect() {
 }
 
 send_file() {
-    FILE=$(find ~ -type f | wofi -d)
-    kitty --class=com.markd.nmtui jocalsend "$FILE"
+    FILE=$(find ~/Documents ~/Downloads ~/Videos ~/Pictures -type f | wofi -d)
+    kitty --class=com.markd.nmtui jocalsend -f "$FILE"
 }
 
 case "$SELECTION" in
