@@ -2,7 +2,8 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   home.file = {
     ".config/wofi/style.css" = {
       text = ''
@@ -15,7 +16,7 @@
           margin: 0px;
           padding: 20px;
           background-color: #${config.colorScheme.palette.base00};
-          opacity: 0.95;
+          opacity: 1;
         }
 
         #inner-box {
@@ -28,7 +29,9 @@
         #outer-box {
           margin: 0;
           padding: 20px;
-          border: none;
+          border: solid;
+          border-width: 1px;
+          border-color: white;
           background-color: #${config.colorScheme.palette.base00};
         }
 
