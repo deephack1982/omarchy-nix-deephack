@@ -143,7 +143,7 @@ in
           interval = 3;
           nospacing = 1;
           on-click = "kitty --class=com.markd.nmtui impala";
-          on-click-right = "sudo rfkill toggle wifi";
+          on-click-right = "rfkill toggle wifi";
         };
         battery = {
           interval = 5;
