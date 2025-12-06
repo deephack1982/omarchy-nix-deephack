@@ -23,6 +23,7 @@ let
     bluetui
     jocalsend
     rose-pine-hyprcursor
+    hyprlauncher
   ];
 
   # Essential system packages - cannot be excluded
